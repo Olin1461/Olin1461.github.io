@@ -1,4 +1,4 @@
-/* Bouman Exam Lab - simple static app (no build step). */
+/* Bouman Exam Trainer - simple static app (no build step). */
 (function(){
   const DB = window.EXAMDB || {};
   const courseOrder = ["ece637","ece641","ece60146"];
