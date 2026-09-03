@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bouman Exam Simulation and Preparation</title>
+<meta name="description" content="Exam-pattern analysis, ranked topics, practice problems with solutions, and review guides for Purdue ECE 60141, ECE 63700, and ECE 60146.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <div class="brand">
+      <span class="logo">B</span>
+      <div>
+        <h1>Bouman Exam Simulation and Preparation</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="picker">
+    <h2 class="step">1 &middot; Choose a course</h2>
+    <div id="courses" class="cards"></div>
+  </section>
+
+  <section class="picker" id="exam-picker" hidden>
+    <h2 class="step">2 &middot; Choose an exam</h2>
+    <div id="exams" class="tabs"></div>
+  </section>
+
+  <section id="content" hidden>
+    <div class="exam-head">
+      <div>
+        <h2 id="exam-title"></h2>
+        <p id="exam-meta" class="meta"></p>
+      </div>
+      <div class="view-toggle" role="tablist">
+        <button id="view-topics" class="active" data-view="topics">Topics &amp; practice</button>
+        <button id="view-mock" data-view="mock">Mock exam</button>
+      </div>
+    </div>
+    <p id="exam-notes" class="notes"></p>
+
+    <div id="topics-view">
+      <h3 class="section-title">Topic likelihood ranking <span class="hint">(most to least likely; click a topic to expand)</span></h3>
+      <div id="ranking"></div>
+    </div>
+
+    <div id="mock-view" hidden>
+      <p class="notes">A fixed mock exam assembled from the highest-probability topics. Work each problem, then reveal the solution.</p>
+      <div id="mock"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Unofficial study aid built from publicly posted past exams (ECE 60141 Fall 2016&ndash;2025, ECE 63700 Spring 2016&ndash;2026, ECE 60146 Spring 2020&ndash;2026). Not affiliated with Purdue University or the instructor. Probabilities are estimates from historical frequency and recent trend.</p>
+  </footer>
+</main>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script src="data/ece641_midterm.js?v=4"></script>
+<script src="data/ece641_final.js?v=4"></script>
+<script src="data/ece637_exam1.js?v=4"></script>
+<script src="data/ece637_exam2.js?v=4"></script>
+<script src="data/ece637_final.js?v=4"></script>
+<script src="data/ece60146_mt1.js?v=4"></script>
+<script src="data/ece60146_mt2.js?v=4"></script>
+<script src="data/concepts_ece641.js?v=4"></script>
+<script src="data/concepts_ece637.js?v=4"></script>
+<script src="data/concepts_ece60146.js?v=4"></script>
+<script src="app.js?v=4"></script>
+</body>
+</html>
